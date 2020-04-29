@@ -1,0 +1,49 @@
+#!/bin/bash
+#
+# apache
+#
+# chkconfig: 345 90 10
+# description: Start up the WebSphere Application Server.
+sHome=/opt/IBM/WebSphere/wp_profile/bin
+serverName=WebSphere_Portal
+DmgrName=WebSphere_Portal
+userName=wasadmin
+password=p@ssword
+usernameNode=wasadmin
+passwordNode=p@ssword
+RETVAL=0
+WAS_HOME=”/opt/IBM/WebSphere/AppServer/profiles/Profile01?
+
+case “$1? in
+start)
+if [ -f $WAS_HOME/Node/bin/start_nodeagent.sh ]; then
+echo $”Starting IBM WebSphere Node Agent and Application Server”
+$WAS_HOME/dmgr/bin/startManager.sh
+$WAS_HOME/Node/bin/start_nodeagent.sh
+$WAS_HOME/Node/bin/start_server_member1.sh
+$WAS_HOME/Node/bin/start_server_member2.sh
+fi
+;;
+stop)
+if [ -f $WAS_HOME/bin/stopServer.sh ]; then
+echo $”Stop IBM WebSphere Application Server”
+$WAS_HOME/Node/bin/stop_server_member1.sh
+$WAS_HOME/Node/bin/stop_server_member2.sh
+$WAS_HOME/Node/bin/stop_nodeagent.sh
+$WAS_HOME/dmgr/bin/stopManager.sh 
+fi
+;;
+status)
+if [ -f $WAS_HOME/bin/serverStatus.sh ]; then
+echo $”Show status of IBM WebSphere Application Server”
+$WAS_HOME/bin/serverStatus.sh server_member1
+$WAS_HOME/bin/serverStatus.sh server_member2
+$WAS_HOME/bin/serverStatus.sh nodeagent
+fi
+;;
+*)
+echo $”Usage: $0 {start|stop|status}”
+exit 1
+;;
+esac
+exit $RETVAL

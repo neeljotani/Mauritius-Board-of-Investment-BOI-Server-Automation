@@ -1,0 +1,8 @@
+ #! /bin/sh    
+ hostname=$(host $ipaddr | awk '{print substr($NF,1,length($NF)-1)}')
+ echo $hostname
+ $h= get the current hostname
+ if [ $hostname -ne $h ]
+ then
+//instructions
+ fi

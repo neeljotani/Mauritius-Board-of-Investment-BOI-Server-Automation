@@ -1,0 +1,48 @@
+[?26-?Jun-?18 7:41 PM]  Ravin Deonarain KHULPUTEEA:  
+Hi 
+ 
+[?26-?Jun-?18 7:42 PM]  
+hi
+ 
+[?26-?Jun-?18 7:42 PM]  
+I am Neel Jotani from Streebo
+ 
+[?26-?Jun-?18 7:43 PM]  
+I want to know that Which Os you are using Currently?
+ 
+[?26-?Jun-?18 7:43 PM]  
+Aix or Linux?
+ 
+[?26-?Jun-?18 7:43 PM]  Ravin Deonarain KHULPUTEEA:  
+AIX 7.2 
+ 
+[?26-?Jun-?18 7:44 PM]  
+We have developed Script on Linux environment
+ 
+[?26-?Jun-?18 7:44 PM]  
+Which i don't think run on AIX
+ 
+[?26-?Jun-?18 7:44 PM]  Ravin Deonarain KHULPUTEEA:  
+script for what ? 
+ 
+[?26-?Jun-?18 7:45 PM]  
+Strating and Stopping your Environment
+ 
+[?26-?Jun-?18 7:45 PM]  
+I mean Portal, Node Agent....
+ 
+[?26-?Jun-?18 7:46 PM]  Ravin Deonarain KHULPUTEEA:  
+yes it must be for AIX 7.2. you can test the scripts before you give us 
+just run it manually on the AIX command line 
+and check the result 
+ 
+[?26-?Jun-?18 7:49 PM]  
+As discussed with Sagar mean While he told me that i need to send Scripts to Ravin and Rahul Sharma(HMD) and during meeting it was discussed that Rahul will Configure the Scripts According To AIX Environment
+ 
+[?26-?Jun-?18 7:50 PM]  Ravin Deonarain KHULPUTEEA:  
+no this is wrong 
+Rahul will only take your scripts and put it in AIX files /etc/inittab for start and rc.shutdown for stop 
+ 
+[?26-?Jun-?18 7:53 PM]  
+i am not an AIX expert. and My script is running perfectly on Linux. and there is no Huge change in Script to configure in AIX and for much criticality on Script you may Align IBM AIX lab team
+ 

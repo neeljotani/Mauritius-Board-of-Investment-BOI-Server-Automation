@@ -1,0 +1,18 @@
+
+/opt/IBM/tools/Autorun.sh stopManager
+
+/opt/IBM/tools/Autorun.sh stopFEBPrimary
+
+/opt/IBM/tools/Autorun.sh stopFEBSecondary
+
+/opt/IBM/tools/Autorun.sh stopNodePrimaryPortal
+
+/opt/IBM/tools/Autorun.sh stopNodeSecondaryPortal
+
+/opt/IBM/tools/Autorun.sh stopNodePrimaryFEB
+
+/opt/IBM/tools/Autorun.sh stopNodeSecondaryFEB
+
+/opt/IBM/tools/Autorun.sh stopPortalPrimary
+
+/opt/IBM/tools/Autorun.sh stopPortalSecondary

@@ -1,0 +1,4 @@
+chkconfig –add was
+chkconfig –level 5 was on
+chkconfig –add ibmhttpd
+chkconfig –level 5 ibmhttpd
