@@ -2,31 +2,35 @@
 #
 # apache
 #
-# chkconfig: 345 85 15 — line says run this script in run level 5, with “start” at 85 and “stop” at 15 (so for startups, it’s done near the end of the startup process, and for shutdown, it’s done quite early
+# chkconfig: 345 85 15 â€” line says run this script in run level 5, with â€œstartâ€ at 85 and â€œstopâ€ at 15 (so for startups, itâ€™s done near the end of the startup process, and for shutdown, itâ€™s done quite early
 # description: Start up the Apache web server.
+
+
+
+
 RETVAL=$?
-APACHE_HOME=”/opt/IBMHttpServer”
-case “$1? in
+APACHE_HOME=â€/opt/IBMHttpServerâ€
+case â€œ$1? in
 start)
 if [ -f $APACHE_HOME/bin/apachectl ]; then
-echo $”Starting IBM Http Server”
+echo $â€Starting IBM Http Serverâ€
 $APACHE_HOME/bin/apachectl start
 fi
 ;;
 stop)
 if [ -f $APACHE_HOME/bin/apachectl ]; then
-echo $”Stopping IBM Http Server”
+echo $â€Stopping IBM Http Serverâ€
 $APACHE_HOME/bin/apachectl stop
 fi
 ;;
 status)
 if [ -f $APACHE_HOME/bin/apachectl ]; then
-echo $”Show status of IBM Http Server”
+echo $â€Show status of IBM Http Serverâ€
 $APACHE_HOME/bin/apachectl status
 fi
 ;;
 *)
-echo $”Usage: $0 {start|stop|status}”
+echo $â€Usage: $0 {start|stop|status}â€
 exit 1
 ;;
 esac
